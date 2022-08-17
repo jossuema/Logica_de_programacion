@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+
+	//funcion de saltarlinea
+	function saltarlinea(){
+		document.write("<br><br><br>");
+	}
+
+	//funcion de imprimir
+	function imprimir(dato){
+		document.write(dato);
+		saltarlinea();
+	}
+
+	//Proceso y salida
+	var tanque = 40;
+	
+	//Imprime el enunciado 1
+	imprimir("Cual es la eficiencia del auto al usar 40 Litros de combustible y recorrer 480 Kilometros<br>");
+
+	//Imprime la respuesta del enunciado
+	imprimir("La distancia que recorre el auto por cada litro de gasolina es: "+480/tanque+" km<br>");
+
+	//imprime el enunciado 2
+	imprimir("Cual es la eficiencia del auto al usar 40 Litros de alcohol y recorrer 300 Kilometros<br>");
+
+	//rimprime la respuesta del enunciado
+	imprimir("La distancia que recorre el auto por cada litro de alcohol es: "+300/tanque+" km<br>");
+
+</script>

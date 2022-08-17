@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULO DE IMC</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");        
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularimc(peso,altura){
+        imc = peso/(altura*altura);
+        
+        return imc;
+    }
+    //pesoChristian = 71
+    //alturaChristian = 1.72
+    //imcChristian = pesoChristian/(alturaChristian*alturaChristian)
+
+    //imprimir("El imc de Christian es: "+imcChristian);
+
+    //pesoJosue = 85
+    //alturaJosue = 1.75
+    //imcJosue = pesoJosue/(alturaJosue*alturaJosue)
+
+    peso = prompt("Informe su peso: ");
+    altura = prompt("Informe su altura: ");
+
+
+    imprimir("El imc calculado es: "+calcularimc(peso,altura));
+
+    
+
+</script>
+
